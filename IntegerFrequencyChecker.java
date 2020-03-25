@@ -1,8 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
-//Mi-am dat 30min ptr asta
+//30min max allocated
 class IntegerFrequencyChecker {
     
     //Given an array of integers, write a method to return the k most frequent elements.
@@ -18,17 +17,17 @@ class IntegerFrequencyChecker {
                 frqTable.put(arrayElem, occurrence);
             }
         }
-    
+        
         Integer key = null;
         Integer occurrence = 0;
-    
+        
         for (Map.Entry<Integer, Integer> pair : frqTable.entrySet()) {
             if (pair.getValue() > occurrence) {
                 occurrence = pair.getValue();
                 key = pair.getKey();
             }
         }
-    
+        
         if (key != null) {
             System.out.println(key);
         } else {

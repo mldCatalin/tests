@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-//Mi-am dat 1h ptr asta
+//1h max allocated
 class PalindromeFinder {
     
     //Given a list of unique words.
