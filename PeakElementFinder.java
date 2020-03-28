@@ -8,6 +8,7 @@ class PeakElementFinder {
     //For example, in array [1, 2, 3, 1], 3 is a peak element and your function should return the index number 2.
     
     void findPeak(int[] array) throws Exception {
+        //TODO: nu ai tratat inceputul si finalul. iti zice de num[-1] si num[n] for a reason
         for (int i = 1; i < array.length - 1; i++) {
             if (array[i - 1] < array[i] & array[i] > array[i + 1]) {
                 System.out.println(i);
