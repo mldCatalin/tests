@@ -3,7 +3,7 @@ class SimilarityFinder {
     
     //Given two strings S and T, determine if they are both one edit distance apart.
     //(Edit poate sa insemne insert/remove/change character)
-    
+    //TODO: asta nu merge
     void checkSimilarity(String s, String t) {
         int changes = 0;
         
